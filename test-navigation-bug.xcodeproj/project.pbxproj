@@ -11,6 +11,7 @@
 		55A182D62A2DDCC300B88EFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A182D52A2DDCC300B88EFC /* ContentView.swift */; };
 		55A182D82A2DDCC300B88EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A182D72A2DDCC300B88EFC /* Assets.xcassets */; };
 		55A182DB2A2DDCC300B88EFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A182DA2A2DDCC300B88EFC /* Preview Assets.xcassets */; };
+		55A182E32A2DDD1A00B88EFC /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 55A182E22A2DDD1A00B88EFC /* SwiftUINavigation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A182E32A2DDD1A00B88EFC /* SwiftUINavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "test-navigation-bug";
+			packageProductDependencies = (
+				55A182E22A2DDD1A00B88EFC /* SwiftUINavigation */,
+			);
 			productName = "test-navigation-bug";
 			productReference = 55A182D02A2DDCC300B88EFC /* test-navigation-bug.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 55A182C72A2DDCC300B88EFC;
+			packageReferences = (
+				55A182E12A2DDD1A00B88EFC /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+			);
 			productRefGroup = 55A182D12A2DDCC300B88EFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55A182E12A2DDD1A00B88EFC /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55A182E22A2DDD1A00B88EFC /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A182E12A2DDD1A00B88EFC /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55A182C82A2DDCC300B88EFC /* Project object */;
 }
